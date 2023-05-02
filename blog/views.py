@@ -3,7 +3,7 @@ from blog.models import Post, Comment
 from .forms import CommentForm
 
 def blog_index(request):
-    posts = Post.Objects.all().order_by('-created_on')
+    posts = Post.objects.all().order_by('-created_on')
     context = {
         "posts": posts,
     }
