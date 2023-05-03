@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
+<!--Local elements for html head-->
 {% block htmlhead %}
 <!--Local CSS doc-->
 <link rel="stylesheet" type="text/css" href="{% static 'projects_styles.css' %}">
@@ -8,8 +9,8 @@
 <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
 {% endblock %}
 
-{% block mainheader %}
 <!--Top of the page, main header-->
+{% block mainheader %}
 <div class="main-header">
     <h1>Portfolio</h1>
     <!--Bubbles for animation-->
@@ -28,8 +29,8 @@
 </div>
 {% endblock %}
 
-{% block navbar %}
 <!--Navbar-->
+{% block navbar %}
 <nav class="navbar navbar-expand-lg" id="bs-nav-override">
     <div class="container">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -46,6 +47,7 @@
 </nav>
 {% endblock %}
 
+<!--Page content-->
 {% block page_content %}
 <div class="row" id="bs-content-override">
 {% for project in projects %}
