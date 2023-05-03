@@ -1,3 +1,8 @@
+/* Body, everything below navbar */
+body {
+  background-color: #4d527c;
+}
+
 /* Main header parent */
 .main-header {
   padding: 60px; /* some padding */
@@ -136,10 +141,6 @@
 }
 
 /* Page_content */
-#bs-content-override .mb-2 {
-  background-color: #9b9dac;
-}
-
 #bs-content-override a {
   border: none;
   background-color: #141949;
