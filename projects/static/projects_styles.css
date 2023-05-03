@@ -134,3 +134,13 @@
   color: rgb(255, 255, 255);
   font-size: 25px;
 }
+
+/* Page_content */
+#bs-content-override .mb-2 {
+  background-color: #9b9dac;
+}
+
+#bs-content-override a {
+  border: none;
+  background-color: #141949;
+}
