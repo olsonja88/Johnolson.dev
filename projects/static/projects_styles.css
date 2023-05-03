@@ -144,3 +144,14 @@
   border: none;
   background-color: #141949;
 }
+
+/* Footer */
+.footer {
+  font-size: 30px;
+  padding: 30px;
+  margin-top: 10px;
+  width: 100%;
+  background-color: #141949;
+  color: white;
+  text-align: center;
+}
