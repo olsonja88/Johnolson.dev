@@ -1,7 +1,56 @@
-{% extends base.html %}
+{% extends "base.html" %}
+{% load static %}
+
+<!--Local elements for html head-->
+{% block htmlhead %}
+<!--Local CSS doc-->
+<link rel="stylesheet" type="text/css" href="{% static 'blog/css/blog_styles.css' %}">
+<!--Didact Gothic font-->
+<link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+{% endblock %}
+
+<!--Top of the page, main header-->
+{% block mainheader %}
+<div class="main-header">
+    <h1>Blog</h1>
+    <!--Bubbles for animation-->
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+</div>
+{% endblock %}
+
+<!--Navbar-->
+{% block navbar %}
+<nav class="navbar navbar-expand-lg" id="bs-nav-override">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="{% url 'project_index' %}">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+            <a class="nav-link" href="{% url 'blog_index' %}">Blog</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</nav>
+{% endblock %}
+
+
 {% block page_content %}
 
-<div class="col-md-8 offset-md-2">
+<div class="col-md-8 offset-md-2" id="bs-content-override">
     <h1>{{ category | title }}</h1>
     <hr>
     {% for post in posts %}
