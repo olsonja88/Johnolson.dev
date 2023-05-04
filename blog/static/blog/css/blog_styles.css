@@ -140,6 +140,12 @@ body {
   font-size: 25px;
 }
 
+/* Page content */
+#bs-content-override a {
+  color: black;
+}
+
+
 /* Footer */
 #bs-footer-override {
   position: fixed;  
