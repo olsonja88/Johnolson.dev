@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class AboutParagraph(models.Model):
+    title = models.CharField(max_length=25)
+    content = models.TextField()
