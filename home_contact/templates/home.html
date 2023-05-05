@@ -31,4 +31,12 @@
 
 <!--Page content-->
 {% block page_content %}
+<div class="row">
+    <div class="col" id="bs-content-override">
+        {% for ap in aps %}
+            <h1>{{ ap.title }}</h1>
+            <p>{{ ap.content }}</p>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}
