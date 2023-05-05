@@ -6,18 +6,20 @@ class ContactForm(forms.Form):
         widget=forms.TextInput(attrs={
             "class": "form-control",
             "placeholder": "Your Name"
-        })
+        }),
+        required=True
     )
-    email = forms.CharField(
-        max_length=60,
-        wigdet=forms.TextInput(attrs={
+    email = forms.EmailField(widget=forms.TextInput(
+        attrs={
             "class": "form-control",
-            "placeholder": "johnsmith@gmail.com"
-        })
+            "placeholder": "johnsmith123@gmail.com"
+        }),
+        required=True
     )
     body = forms.CharField(widget=forms.Textarea(
         attrs={
             "class": "form-control",
-            "placeholder": "Meesage"
-        })
+            "placeholder": "Message"
+        }),
+        required=True
     )
