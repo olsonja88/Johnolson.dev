@@ -12,7 +12,7 @@
 <!--Top of the page, main header-->
 {% block mainheader %}
 <div class="main-header">
-    <h1>Portfolio</h1>
+    <h1>Johnolson.dev</h1>
     <!--Bubbles for animation-->
     <div class="bubbles">
         <div class="bubble"></div>
@@ -29,22 +29,24 @@
 </div>
 {% endblock %}
 
+<!--Navbar-->
+{% block navbar %}
+<nav class="navbar navbar-expand-lg" id="bs-nav-override">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="{% url 'project_index' %}">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+            <a class="nav-link" href="{% url 'blog_index' %}">Blog</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</nav>
+{% endblock %}
+
 <!--Page content-->
 {% block page_content %}
-<h1>{{ project.title }}</h1>
-<div class="row">
-    <div class="col-md-8">
-        <img class="mb-4" src="{% static project.image %}" alt="" width="100%">        
-    </div>
-    <div class="col-md-4">
-        <h5>About the project:</h5>
-        <P>{{ project.description }}</P>
-        <br>
-        <h5>Technology used:</h5>
-        <P>{{ project.technology }}</P>
-        <br>
-        <h5>GitHub Repository:</h5>
-        <a href="{{ project.gh_url }}">{{ project.gh_url }}</a>
-    </div>
-</div>
 {% endblock %}
