@@ -131,8 +131,7 @@ body {
 
 /* Navbar */
 #bs-nav-override {
-    overflow: hidden; /* Hide overflow */
-    padding: 20px;
+    overflow: hidden; /* Hide overflow */    
     background-color: #141949; /* Dark background color */
     position: sticky;
     width: 100%;
