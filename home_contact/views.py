@@ -27,4 +27,4 @@ def home(request):
     return render(request, 'home.html', context)
 
 def success(request):
-    return HttpResponse("Success!  Thank you for your message.")
+    return render(request, 'success.html')
