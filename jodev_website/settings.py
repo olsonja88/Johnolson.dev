@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'projects',
     'blog',
+    'home_contact',
 ]
 
 MIDDLEWARE = [
@@ -52,6 +53,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'jodev_website.urls'
+
+DEFAULT_FROM_EMAIL = "jaolson190@gmail.com"
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 TEMPLATES = [
     {

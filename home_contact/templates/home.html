@@ -4,7 +4,7 @@
 <!--Local elements for html head-->
 {% block htmlhead %}
 <!--Local CSS doc-->
-<link rel="stylesheet" type="text/css" href="{% static 'projects/css/projects_styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'home_contact/css/home_contactstyles.css' %}">
 <!--Didact Gothic font-->
 <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
 {% endblock %}
@@ -12,7 +12,7 @@
 <!--Top of the page, main header-->
 {% block mainheader %}
 <div class="main-header">
-    <h1>Portfolio</h1>
+    <h1>Johnolson.dev</h1>
     <!--Bubbles for animation-->
     <div class="bubbles">
         <div class="bubble"></div>
@@ -31,20 +31,26 @@
 
 <!--Page content-->
 {% block page_content %}
-<h1>{{ project.title }}</h1>
 <div class="row">
-    <div class="col-md-8">
-        <img class="mb-4" src="{% static project.image %}" alt="" width="100%">        
-    </div>
-    <div class="col-md-4">
-        <h5>About the project:</h5>
-        <P>{{ project.description }}</P>
-        <br>
-        <h5>Technology used:</h5>
-        <P>{{ project.technology }}</P>
-        <br>
-        <h5>GitHub Repository:</h5>
-        <a href="{{ project.gh_url }}">{{ project.gh_url }}</a>
+    <div class="col" id="bs-content-override">
+        {% for ap in aps %}
+            <h1>{{ ap.title }}</h1>
+            <p>{{ ap.content }}</p>
+        {% endfor %}
+
+        <!--Big empty space-->
+        <div class="vr vr-blurry" style="height: 100px;"></div>
+        
+        <h1>Contact</h1>
+        <div class="container" id="django-contact-form">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="form-actions">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 {% endblock %}

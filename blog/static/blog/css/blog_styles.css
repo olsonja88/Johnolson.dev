@@ -1,6 +1,6 @@
 /* Body, everything below navbar */
 body {
-  background-color: #dcdee9;
+  background-color: rgb(250, 245, 255);
 }
 
 /* Main header parent */
@@ -131,8 +131,12 @@ body {
   
 /* Navbar */
 #bs-nav-override {
-  background-color: #141949;
-  padding: 10px;
+  overflow: hidden; /* Hide overflow */    
+  background-color: #141949; /* Dark background color */
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 2;
 }
 
 #bs-nav-override a {
@@ -143,6 +147,11 @@ body {
 /* Page content */
 #bs-content-override a {
   color: black;
+}
+
+#bs-content-override .btn {
+  background-color: #141949;
+  border: none;
 }
 
 
