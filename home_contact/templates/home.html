@@ -39,16 +39,18 @@
         {% endfor %}
 
         <!--Big empty space-->
-        <div class="vr vr-blurry" style="height: 300px;"></div>
+        <div class="vr vr-blurry" style="height: 100px;"></div>
         
         <h1>Contact</h1>
-        <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <div class="form-actions">
-                <button type="submit">Send</button>
-            </div>
-        </form>
+        <div class="container" id="django-contact-form">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="form-actions">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 {% endblock %}
