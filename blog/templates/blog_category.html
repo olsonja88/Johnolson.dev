@@ -1,32 +1,15 @@
 {% extends "base.html" %}
 {% load static %}
 
-<!--Local elements for html head-->
+<!--App specifc elements for html head-->
 {% block htmlhead %}
-<!--Local CSS doc-->
+<!--App CSS doc-->
 <link rel="stylesheet" type="text/css" href="{% static 'blog/css/blog_styles.css' %}">
-<!--Didact Gothic font-->
-<link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
 {% endblock %}
 
 <!--Top of the page, main header-->
 {% block mainheader %}
-<div class="main-header">
-    <h1>Blog</h1>
-    <!--Bubbles for animation-->
-    <div class="bubbles">
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-    </div>
-</div>
+<h1>Blog</h1>
 {% endblock %}
 
 {% block page_content %}
