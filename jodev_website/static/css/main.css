@@ -1,0 +1,156 @@
+/* Body, everything below navbar */
+body {
+    background-color: rgb(250, 245, 255);
+}
+
+/* Main header parent */
+.main-header {
+    padding: 60px; /* some padding */
+    text-align: center; /* center the text */
+    background: rgb(255, 255, 255); /* White background */
+    color: #141949; /* Navy Blue color */
+    position: relative;
+}
+
+/* All h1's in main-header */
+.main-header h1 {
+    font-size: 6em;
+    text-align: center;
+}
+
+/* Bubbles in main-header */
+.bubbles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.bubble {
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background: #141949;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: floating 10s infinite ease-in;
+}
+
+.bubble:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation-duration: 8s;
+}
+
+.bubble:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    left: 20%;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    left: 35%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(4) {
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    animation-duration: 7s;
+    animation-delay: 0s;
+}
+
+.bubble:nth-child(5) {
+    width: 35px;
+    height: 35px;
+    left: 55%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(6) {
+    width: 45px;
+    height: 45px;
+    left: 65%;
+    animation-duration: 8s;
+    animation-delay: 3s;
+}
+
+.bubble:nth-child(7) {
+    width: 25px;
+    height: 25px;
+    left: 75%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(8) {
+    width: 80px;
+    height: 80px;
+    left: 80%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(9) {
+    width: 15px;
+    height: 15px;
+    left: 70%;
+    animation-duration: 9s;
+    animation-delay: 0s;
+}
+
+.bubble:nth-child(10) {
+    width: 50px;
+    height: 50px;
+    left: 85%;
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+
+/* Float animation for bubbles */
+@keyframes floating {
+    0% {
+        bottom: -100px;
+    }
+    100% {
+        bottom: 1080px;
+    }
+}
+
+/* Navbar */
+#bs-nav-override {
+    overflow: hidden; /* Hide overflow */    
+    background-color: #141949; /* Dark background color */
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+#bs-nav-override a {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+/* Footer */
+#bs-footer-override {
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    background-color: #141949;
+    color: white;
+    text-align: center;
+}
+  

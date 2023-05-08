@@ -123,6 +123,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Static file dir for static files shared between all pages
+STATICFILES_DIRS = [
+    BASE_DIR / 'jodev_website/static/',
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
