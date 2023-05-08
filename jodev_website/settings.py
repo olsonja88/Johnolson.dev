@@ -125,7 +125,7 @@ STATIC_URL = 'static/'
 
 # Static file dir for static files shared between all pages
 STATICFILES_DIRS = [
-    BASE_DIR / 'static/',
+    BASE_DIR / 'jodev_website/static/',
 ]
 
 # Default primary key field type
