@@ -144,6 +144,16 @@ body {
     font-size: 25px;
 }
 
+/* Icons in navbar */
+.icon {
+    float: right;
+}
+
+.icon img {
+    width: 80%;
+    height: auto;    
+}
+
 /* Footer */
 #bs-footer-override {
     font-size: 20px;
