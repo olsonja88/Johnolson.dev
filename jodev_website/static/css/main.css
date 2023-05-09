@@ -141,14 +141,15 @@ body {
 
 #bs-nav-override a {
     color: rgb(255, 255, 255);
-    font-size: 25px;    
+    font-size: 25px;
 }
 
-#icons {
+/* Icons in navbar */
+.icon {
     float: right;
 }
 
-#icons img {
+.icon img {
     width: 80%;
     height: auto;    
 }

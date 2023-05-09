@@ -18,12 +18,8 @@
     <div class="col" id="bs-content-override">
         {% for ap in aps %}
             <h1>{{ ap.title }}</h1>
-            <p>{{ ap.content }}</p>
+            <p id="about-me">{{ ap.content }}</p>
         {% endfor %}
-
-        <!--Big empty space-->
-        <div class="vr vr-blurry" style="height: 100px;"></div>
-        
         <h1>Contact</h1>
         <div class="container" id="django-contact-form">
             <form method="post">

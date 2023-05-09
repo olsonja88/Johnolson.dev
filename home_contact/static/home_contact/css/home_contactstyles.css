@@ -28,6 +28,15 @@
     padding: 20px;
 }
 
+#about-me {
+    background-color: white;
+    border-radius: 25px 25px;
+    box-shadow: 2px 2px 8px;
+    border-style: solid;
+    border-color:#141949;
+    border-width: 5px;
+}
+
 /* Contact form */
 #django-contact-form{
     color: rgb(255, 255,255);
