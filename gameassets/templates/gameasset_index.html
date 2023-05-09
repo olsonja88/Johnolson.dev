@@ -14,8 +14,8 @@
 <div class="row" id="bs-content-override">
     {% for sprite in sprites %}
         <div class="col-md-4">
-            <div class="card mb-2">
-                <h5 class="card-title">{{ sprite.name }}</h5>
+            <h5 class="card-title">{{ sprite.name }}</h5>
+            <div class="card mb-2">                
                 <img class="card-img-top" src="{% static sprite.image %}">                                    
             </div>
         </div>
@@ -23,16 +23,16 @@
     </div>
     {% for animation in animations %}
         <div class="col-md-4">
-            <div class="card mb-2">
-                <h5 class="card-title">{{ animation.name }}</h5>
+            <h5 class="card-title">{{ animation.name }}</h5>
+            <div class="card mb-2">            
                 <img class="card-img-top" src="{% static animation.gif %}">                                    
             </div>
         </div>
         {% endfor %}
     {% for soundtrack in soundtracks %}
     <div class="col-md-4">
-        <div class="card mb-2">
-            <h5 class="card-title">{{ soundtrack.name }}</h5>
+        <h5 class="card-title">{{ soundtrack.name }}</h5>
+        <div class="card mb-2">            
             <audio controls>
                 <source src="{% static soundtrack.mp3 %}" type="audio/mpeg">
             </audio>                               
