@@ -141,7 +141,16 @@ body {
 
 #bs-nav-override a {
     color: rgb(255, 255, 255);
-    font-size: 25px;
+    font-size: 25px;    
+}
+
+#icons {
+    float: right;
+}
+
+#icons img {
+    width: 80%;
+    height: auto;    
 }
 
 /* Footer */
