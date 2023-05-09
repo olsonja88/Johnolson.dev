@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block htmlhead %}
+<!--App CSS doc-->
+<link rel="stylesheet" type="text/css" href="{% static 'gameassets/css/gameasset_styles.css' %}">
+{% endblock %}
+
+{% block mainheader %}
+<h1>Game Assets</h1>
+{% endblock %}
+
+{% block page_content %}
+<div class="row" id="bs-content-override">    
+    <div class="col-md-4">
+        <!--Left Column-->
+        <p> * Game assets were made using Photoshop for sprites and FL Studio for music.</p>
+    </div>
+    <div class="col-md-4">    
+        <!--Middle column-->
+        <h2 class="mt-4">Sprites</h2>
+        {% for sprite in sprites %}
+            <h5 class="card-title">{{ sprite.name }}</h5>
+            <div class="card mb-2">                
+                <img class="card-img-top" src="{% static sprite.image %}">                                    
+            </div>
+        {% endfor %}
+        <h2 class="mt-4">Animations</h2>
+        {% for animation in animations %}
+        <h5 class="card-title">{{ animation.name }}</h5>
+        <div class="card mb-2">            
+            <img class="card-img-top" src="{% static animation.gif %}">                                    
+        </div>
+        {% endfor %}
+        <h2 class="mt-4">Soundtracks</h2>
+        {% for soundtrack in soundtracks %}
+        <h5 class="card-title">{{ soundtrack.name }}</h5>        
+        <audio controls>
+            <source src="{% static soundtrack.mp3 %}" type="audio/mpeg">
+        </audio>                                       
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
