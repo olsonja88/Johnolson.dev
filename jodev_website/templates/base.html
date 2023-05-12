@@ -10,70 +10,69 @@
   {% endblock htmlhead %}
 </head>
 
-<!--Main Header-->
-<div class="main-header">
-  {% block mainheader %}
-  {% endblock %}
-    <!--Bubbles for animation-->
-    <div class="bubbles">
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-    </div>
-</div>
-
-<!--Navbar-->
-<nav class="navbar navbar-expand" id="bs-nav-override">
-  <div class="container">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-          <a class="nav-link" href="{% url 'home' %}">Contact</a>
-          </li>
-          <li class="nav-item active">
-          <a class="nav-link" href="{% url 'project_index' %}">Portfolio</a>
-          </li>
-          <li class="nav-item active">
-          <a class="nav-link" href="{% url 'blog_index' %}">Blog</a>
-          </li>
-          <li class="nav-item active">
-          <a class="nav-link" href="{% url 'gameasset_index' %}">Game Assets</a>
-          </li>          
-          <li class="nav-item active icon">
-          <a class="nav-link text-right" href="https://github.com/olsonja88">
-            <img src="{% static 'img/github.png' %}" alt="GitHub Button">
-          </a>
-          </li>
-          <li class="nav-item active icon">
-          <a class="nav-link text-right" href="https://www.linkedin.com/in/john-olson-036096276/">
-            <img src="{% static 'img/linkedin.png' %}" alt="LinkedIn Button">
-          </a>
-          </li>          
-      </ul>
+<body>
+  <!--Main Header-->
+  <div class="main-header">
+    {% block mainheader %}
+    {% endblock %}
+      <!--Bubbles for animation-->
+      <div class="bubbles">
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
       </div>
   </div>
-</nav>
 
-<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand" id="bs-nav-override">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}">Contact</a>
+            </li>
+            <li class="nav-item active">
+            <a class="nav-link" href="{% url 'project_index' %}">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+            <a class="nav-link" href="{% url 'blog_index' %}">Blog</a>
+            </li>
+            <li class="nav-item active">
+            <a class="nav-link" href="{% url 'gameasset_index' %}">Game Assets</a>
+            </li>          
+            <li class="nav-item active icon">
+            <a class="nav-link text-right" href="https://github.com/olsonja88">
+              <img src="{% static 'img/github.png' %}" alt="GitHub Button">
+            </a>
+            </li>
+            <li class="nav-item active icon">
+            <a class="nav-link text-right" href="https://www.linkedin.com/in/john-olson-036096276/">
+              <img src="{% static 'img/linkedin.png' %}" alt="LinkedIn Button">
+            </a>
+            </li>          
+        </ul>
+        </div>
+    </div>
+  </nav>
+  
   <!--Page content-->
   <div class="container">
     {% block page_content %}
-    {% endblock %}    
+    {% endblock %}
   </div>
+  
   <!--Big empty space-->
   <div class="vr vr-blurry" style="height: 300px;"></div>
-  <div class="outer-circle">
-    <div class="inner-circle"><!--Inner Circle--></div>
-  </div>
+
   <!--Footer-->
-  <footer class="mt-4" id="bs-footer-override">
+  <footer id="bs-footer-override">
     <p>Made by John Olson</p>
   </footer>
 </body>
