@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'jodev_website.wsgi.application'
+WSGI_APPLICATION = 'jodev_website.wsgi.app'
 
 
 # Database
