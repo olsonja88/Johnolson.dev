@@ -1,0 +1,10 @@
+/* Page_content */
+#bs-content-override .mb-2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#bs-content-override a {
+  border: none;
+  background-color: #141949;
+}
