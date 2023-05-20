@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 from home_contact.models import AboutParagraph
 from .forms import ContactForm
 
-def home(request):
+def index(request):
     form = ContactForm()
     if request.method == 'POST':
         form = ContactForm(request.POST)
