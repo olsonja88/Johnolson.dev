@@ -1,3 +1,7 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "home_contact/templates/home.html" }]
+    "builds": [{
+        "src": "jodev_website/wsgi.py",
+        "use": "@vercel/python"        
+    }],
+    "rewrites": [{ "source": "/(.*)", "destination": "jodev_website/wsgi.py" }]
 }
