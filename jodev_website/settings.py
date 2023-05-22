@@ -130,13 +130,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static_root/'
+STATIC_URL = 'static/'
 STATIC_ROOT = 'static_root/'
 
 # Static file dir for static files shared between all pages
 STATICFILES_DIRS = [
     BASE_DIR / 'static_root/',
     BASE_DIR / 'jodev_website/static/',
+    BASE_DIR / 'static/'
 ]
 
 # Default primary key field type

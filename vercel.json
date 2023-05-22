@@ -1,7 +1,6 @@
 {
     "builds": [
-        {"src": "jodev_website/wsgi.py", "use": "@vercel/python"},
-        {"src": "static_root/(.*)", "use": "@vercel/static"}
+        {"src": "jodev_website/wsgi.py", "use": "@vercel/python"}        
     ],
     "rewrites": [{ "source": "/(.*)", "destination": "jodev_website/wsgi.py" }]
 }
