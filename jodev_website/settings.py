@@ -131,7 +131,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static_root/'
-STATIC_ROOT = 'static_root/'
+STATIC_ROOT = 'jodev_website/static_root/'
 
 # Static file dir for static files shared between all pages
 STATICFILES_DIRS = [
