@@ -135,6 +135,7 @@ STATIC_ROOT = 'static_root/'
 
 # Static file dir for static files shared between all pages
 STATICFILES_DIRS = [
+    BASE_DIR / 'static_root/',
     BASE_DIR / 'jodev_website/static/',
 ]
 
