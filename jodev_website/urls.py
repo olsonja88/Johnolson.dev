@@ -18,7 +18,6 @@ from django.contrib import admin
 from django.urls import path, include
 from home_contact.views import home
 from . import settings
-from .. import static
 
 urlpatterns = [
     path('', home, name='home'),
@@ -29,4 +28,3 @@ urlpatterns = [
     path("blog/", include("blog.urls")),    
     path("gameassets/", include("gameassets.urls"))
 ]
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
