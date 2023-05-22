@@ -1,9 +1,0 @@
-/* Page content */
-#bs-content-override a {
-  color: black;
-}
-
-#bs-content-override .btn {
-  background-color: #141949;
-  border: none;
-}
