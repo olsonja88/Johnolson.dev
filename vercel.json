@@ -3,5 +3,6 @@
         "src": "jodev_website/wsgi.py",
         "use": "@vercel/python"        
     }],
-    "rewrites": [{ "source": "/(.*)", "destination": "jodev_website/wsgi.py" }]
+    "rewrites": [{ "source": "/(.*)", "destination": "jodev_website/wsgi.py" }],
+    "installCommand": "npm i --legacy-peer-deps"
 }
