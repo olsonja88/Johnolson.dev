@@ -30,6 +30,7 @@
 
 #bs-content-override img {
     border-radius: 50%;
+    size: 25%;
 }
 
 #about-me {
