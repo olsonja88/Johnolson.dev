@@ -27,4 +27,10 @@ def home(request):
     return render(request, 'home.html', context)
 
 def success(request):
+
+    aps = AboutParagraph.objects.all()
+    context = {
+        'aps': aps        
+    }
+
     return render(request, 'success.html')
