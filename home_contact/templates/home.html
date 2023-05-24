@@ -18,7 +18,7 @@
     <div class="col" id="bs-content-override">
         {% for ap in aps %}
             <h1>{{ ap.title }}</h1>            
-            <img src="{% static ap.photo %}" class="mb-2" style="border-radius: 50%; transform: scale(0.25)">            
+            <img src="{% static ap.photo %}" class="mb-2" style="border-radius: 50%;">            
             <p id="about-me">{{ ap.content }}</p>
         {% endfor %}
         <h1>Contact</h1>
