@@ -28,7 +28,7 @@
     padding: 20px;
 }
 
-img {
+#bs-content-override .picture {
     border-radius: 50%;
     size: 25%;
 }
