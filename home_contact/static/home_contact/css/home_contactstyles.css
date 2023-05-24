@@ -28,7 +28,7 @@
     padding: 20px;
 }
 
-#profile-pic {
+#bs-content-override #profile-pic {
     border-radius: 50%;
     size: 25%;
 }
