@@ -16,6 +16,8 @@ https://www.johnolson.dev
 11. Access the local app at "localhost:8000".
 
 ## About this project
-* Personal portfolio project to showcase other work I'm doing.
 * Created using the Django web framework, and hosted on Vercel (both deployment and PostgreSQL db).
 * This project used Python, HTML, CSS, and JS languages.
+
+## Current State 7/6/23
+Working on moving from the entire project being Django, to only having only a Django backend with React frontend.
